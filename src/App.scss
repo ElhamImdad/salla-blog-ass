@@ -1,15 +1,16 @@
 /* .App {
   text-align: center;
 } */
-@import './styles/scss/colors.scss';
+// @import './styles/scss/colors.scss';
 
-.App {
-  background-color: $bg-light;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+// .App {
+//   background-color: $bg-light;
+//   @apply bg-white-light min-h-screen;
+//   // min-height: 100vh;
+//   // display: flex;
+//   // flex-direction: column;
+//   // align-items: center;
+//   // justify-content: center;
+//   // font-size: calc(10px + 2vmin);
+//   // color: white;
+// }
