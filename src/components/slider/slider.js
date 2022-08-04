@@ -1,6 +1,6 @@
-import React, { useState, createRef } from "react";
-import {SliderData} from "./SliderData";
-import './Slider.scss';
+import React, { useState, createRef, useEffect } from "react";
+import { SliderData } from "./SliderData";
+import "./Slider.scss";
 
 function Slider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,12 +11,12 @@ function Slider() {
     return acc;
   }, {});
 
-  const scrollToIndex = i => {
+  const scrollToIndex = (i) => {
     setCurrentIndex(i);
     refs[i].current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'nearest',
-      inline: 'start',
+      behavior: "smooth",
+      block: "nearest",
+      inline: "start",
     });
   };
 
@@ -36,21 +36,24 @@ function Slider() {
     }
   };
 
-  const arrowStyle =
-    'absolute text-white text-2xl z-10 bg-black h-10 w-10 rounded-full opacity-75 flex items-center justify-center';
-    
   const sliderControl = (isLeft) => (
     <button
       type="button"
       onClick={isLeft ? previousIndex : nextIndex}
-      className={`${arrowStyle} ${isLeft ? "left-2" : "right-2"}`}
-      style={{ top: "40%" }}
+      className={`arrow-style ${
+        isLeft ? "md:left-24 left-10" : "md:right-24 right-10"
+      }`}
     >
-      <span role="img" aria-label={`Arrow ${isLeft ? "left" : "right"}`}>
-        {isLeft ? "◀" : "▶"}
-      </span>
+      <span>{isLeft ? ">" : "<"}</span>
     </button>
   );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // nextIndex();
+    }, 3000);
+    return () => clearInterval(interval);
+  });
 
   return (
     <>
@@ -58,23 +61,42 @@ function Slider() {
         <div className="relative w-full">
           <div className="slider">
             {sliderControl(true)}
-            {SliderData.map(({img}, i) => (
+            {SliderData.map(({ img }, i) => (
               <div className="w-full flex-shrink-0" key={i} ref={refs[i]}>
-                {console.log('curren i--> ', i)}
-                {console.log(img)}
-                <img src={img} className="w-full h-full object-cover" />
+                <img
+                  src={img}
+                  className="w-full h-full object-cover"
+                  alt="مركز المدونة"
+                />
+              
               </div>
             ))}
+            {/* <h1 className="items-center justify-center text-1xl font-bold sm:text-2xl text-primary-light">
+                  مركز المدونة
+                </h1> */}
             {sliderControl()}
+            
+            {/* <div className="indicators-wrapper">
+              <ul className="indicators">
+                {SliderData.map(function (item, index) {
+                  return (
+                    <li
+                      className={
+                        index + 1 === currentIndex
+                          ? "active-indicator"
+                          : ""
+                      }
+                      onClick={this.clickIndicator}
+                    >
+                      {index + 1}
+                    </li>
+                  );
+                }, this)}
+              </ul>
+            </div> */}
           </div>
         </div>
-
-
       </div>
-      <h1 className="text-3xl font-bold underline text-purple-900">
-          Hello world!
-        </h1>
-        <p className="text-red-500 text-lg">react and tailwind</p>
     </>
   );
 }

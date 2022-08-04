@@ -1,14 +1,14 @@
 
 import Navbar from './components/navbar/Navbar'
-import Slider from './components/slider/Slider';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
     {/* <Navbar/> */}
-    <div className="bg-white-light min-h-screen">
+    <div className="bg-white-light min-h-screen overflow-x-hidden">
       <Navbar/>
-      <Slider/>
+      <Home/>
     </div>
   </>
   );

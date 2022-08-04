@@ -5,6 +5,8 @@ module.exports = {
   ],
   theme: {
     colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
       'white': {
         light: '#fcfcfc',
         DEFAULT: '#FFFFFF',
@@ -18,6 +20,7 @@ module.exports = {
       },
       'black': {
         light: '#222222',
+        DEFAULT: '#000000',
       },
       'gray':{
         300: '#D1D5DB',

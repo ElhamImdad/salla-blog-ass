@@ -4,7 +4,7 @@ import { FaMoon, FaSistrix } from "react-icons/fa";
 function Navbar() {
   return (
     <>
-      <nav className="bg-black-light sticky top-0 z-10">
+      <nav className="bg-black-light sticky top-0 z-10 w-fill w-window">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
 
@@ -18,21 +18,21 @@ function Navbar() {
                 <div className="flex space-x-4">
                   <a
                     href="#"
-                    className="text-primary-light underline underline-offset-1 px-3 py-2 text-sm font-medium"
+                    className="text-primary-light underline underline-offset-1 px-3 py-2 text-sm md:text-base font-normal"
                     aria-current="page"
                   >
                     الرئيسية
                   </a>
                   <a
                     href="#"
-                    className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium"
+                    className="text-gray-300 hover:text-white px-3 py-2 text-sm md:text-base font-normal"
                   >
                     {" "}
                     التقارير والدراسات
                   </a>
                   <a
                     href="#"
-                    className="text-gray-300 hover:text-white py-2 text-sm font-medium"
+                    className="text-gray-300 hover:text-white py-2 text-sm md:text-base font-normal"
                   >
                     المقالات
                   </a>
