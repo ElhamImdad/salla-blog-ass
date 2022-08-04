@@ -36,7 +36,7 @@ function CardsIndex() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6 ">
           <div className="h-full w-full hidden md:flex">
-            <CardWithFooter />
+            <CardWithFooter height1={'h-4/6'} height2={'h-2/6'}/>
           </div>
           <div className="grid grid-rows-3 grid-col-1 gap-y-2">
             <CardWithSide />
@@ -54,7 +54,6 @@ function CardsIndex() {
             className="w-full h-60 md-h-80 object-cover rounded-md"
           ></img>
           <div className="absolute flex flex-item-center opacity-70 bg-black-light inset-0 rounded-md">
-
             <div className="text-white font-normal my-auto lg:w-1/2 m-2 md:mr-12">
               <div className="">
                 <span className="h-3 md:h-5 border-primary-light border-solid border-r-2  mx-1"></span>
@@ -62,7 +61,9 @@ function CardsIndex() {
                   أفكار البزنس
                 </span>
               </div>
-              <p className="text-base md:text-2xl py-2">ماهو مستقبل التجارة الالكترونية؟</p>
+              <p className="text-base md:text-2xl py-2">
+                ماهو مستقبل التجارة الالكترونية؟
+              </p>
               <div className="text-sx md:text-base">
                 من المتوقع أن تزيد المبيعات من 1ز3 تريلون عام 2014 الى 4ز5
                 تريلون في عام 2021
@@ -75,19 +76,26 @@ function CardsIndex() {
         <div className="relative">
           <div className="flex flex-row ">
             <div className="overflow-hidden bg-white w-full rounded-md">
-            <button className="text-xs md:text-lg px-1.5 py-2 md:px-3.5 md:py-4 underline underline-offset-8 ">الاكثر قراءة</button>
-            <button className="text-xs md:text-lg px-1.5 py-2 md:px-3.5 md:py-4  text-gray-300">الاكثر قراءة</button>
-            <button className="text-xs md:text-lg px-1.5 py-2 md:px-3.5 md:py-4  text-gray-300">الاكثر قراءة</button>
+              <button className="text-xs md:text-lg px-1.5 py-2 md:px-3.5 md:py-4 underline underline-offset-8 ">
+                الاكثر قراءة
+              </button>
+              <button className="text-xs md:text-lg px-1.5 py-2 md:px-3.5 md:py-4  text-gray-300">
+                الاكثر قراءة
+              </button>
+              <button className="text-xs md:text-lg px-1.5 py-2 md:px-3.5 md:py-4  text-gray-300">
+                الاكثر قراءة
+              </button>
             </div>
             {/* <div>
               <button className=""><AiOutlineRightCircle/></button>
             </div> */}
           </div>
-          <div>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3  my-3">
+            {DataList.map(({ img }, i) => (
+              <CardWithFooter height1={'h-1/2'} height2={'h-1/2'}/>
+            ))}
           </div>
         </div>
-
       </div>
     </>
   );
