@@ -75,25 +75,6 @@ function Slider() {
                   مركز المدونة
                 </h1> */}
             {sliderControl()}
-            
-            {/* <div className="indicators-wrapper">
-              <ul className="indicators">
-                {SliderData.map(function (item, index) {
-                  return (
-                    <li
-                      className={
-                        index + 1 === currentIndex
-                          ? "active-indicator"
-                          : ""
-                      }
-                      onClick={this.clickIndicator}
-                    >
-                      {index + 1}
-                    </li>
-                  );
-                }, this)}
-              </ul>
-            </div> */}
           </div>
         </div>
       </div>

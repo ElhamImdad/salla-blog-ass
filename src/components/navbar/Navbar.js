@@ -18,7 +18,7 @@ function Navbar() {
                 <div className="flex space-x-4">
                   <a
                     href="#"
-                    className="text-primary-light underline underline-offset-1 px-3 py-2 text-sm md:text-base font-normal"
+                    className="text-primary-light underline underline-offset-8 px-3 py-2 text-sm md:text-base font-normal"
                     aria-current="page"
                   >
                     الرئيسية
@@ -66,33 +66,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-// <>
-//   <nav className="w-screen h-[70px] bg-zinc-800 fixed drop-shadow-lg">
-//     <div className="px-20 flex justify-between items-center w-full h-full">
-//       <div className="flex">
-//         <button className="border-none bg-transparent text-white">
-//           icon1
-//         </button>
-//         <button className="px-4 py-3 text-white">search</button>
-//       </div>
-
-//       <div classame="flex justify-between items-center">
-//           <div className="flex flex-row flex-wrap space-x-6 hidden md:flex">
-//             <div classNameName="flex items-center text-sm text-white">
-//               المقالات
-//             </div>
-//             <div classNameName="flex items-center text-sm text-white">
-//               التقارير والدراسات
-//             </div>
-//             <div classNameName="flex items-center text-sm text-white">
-//               الرئيسية
-//             </div>
-//         </div>
-//         <div>
-//         <h1 classNameName="text-2xl font-bold sm:text-3xl text-white">المدونة | Blog </h1>
-//         </div>
-//       </div>
-//     </div>
-//   </nav>
-// </>

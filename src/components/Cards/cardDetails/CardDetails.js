@@ -3,13 +3,12 @@ import "../Card.scss";
 
 function CardDetails({imgSrc, idx}) {
   return (
-    <div className="rounded-md h-52 md:h-64 relative ">
+    <div className="rounded-md w-full h-52 md:h-64 my-2 md:mt-0 md-mb-2 lg:my-0 relative ">
       <img
         src={imgSrc}
         alt="most read"
         className="h-full w-full object-cover rounded-md"
       ></img>
-      {console.log(idx)}
       <div class="absolute opacity-50 bg-black-light inset-0 rounded-md">
         <div class="text-white inset-x-3 bottom-2 absolute font-normal">
             <div className="text-base md:text-lg pt-1">التسويق</div>

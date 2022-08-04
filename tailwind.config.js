@@ -8,12 +8,12 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       'white': {
-        light: '#fcfcfc',
+        light: '#F5F5F5',
         DEFAULT: '#FFFFFF',
         dark: '#f7f7f7',
       },
       'primary': {
-        light: '#5dd5c4',
+        light: '#5DD5C4',
       },
       'orange': {
         light: '#ff9f4b',
@@ -21,9 +21,12 @@ module.exports = {
       'black': {
         light: '#222222',
         DEFAULT: '#000000',
+        neutrals: '#404343',
       },
       'gray':{
+        100: '#ECEEED',
         300: '#D1D5DB',
+        neutrals: '#808686',
       }
     },
     extend: {},
