@@ -1,11 +1,11 @@
 import React from "react";
-import { AiOutlineLeft, AiOutlineRightCircle } from "react-icons/ai";
+import { AiOutlineLeft } from "react-icons/ai";
 import CardDetails from "./cardDetails/CardDetails";
 import CardWithFooter from "./cardDetails/CardWithFooter";
 import CardWithSide from "./cardDetails/CardWithSide";
 import { SliderData as DataList } from "../slider/SliderData";
 
-function CardsIndex() {
+const CardsIndex = () => {
   const checkList = (img, i) => {
     if (i < 3) {
       <CardDetails imgSrc={img} />;
@@ -36,10 +36,11 @@ function CardsIndex() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6 ">
           <div className="h-full w-full hidden md:flex">
-            <CardWithFooter height1={'h-4/6'} height2={'h-2/6'}/>
+            <CardWithFooter height1={"h-4/6"} height2={"h-2/6"} />
           </div>
-          <div className="grid grid-rows-3 grid-col-1 gap-y-2">
+          <div className="grid grid-cols-1 gap-y-2">
             <CardWithSide />
+       
             <CardWithSide />
             <CardWithSide />
           </div>
@@ -92,13 +93,13 @@ function CardsIndex() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3  my-3">
             {DataList.map(({ img }, i) => (
-              <CardWithFooter height1={'h-1/2'} height2={'h-1/2'}/>
+              <CardWithFooter height1={"h-1/2"} height2={"h-1/2"} />
             ))}
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default CardsIndex;

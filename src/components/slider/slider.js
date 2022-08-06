@@ -2,7 +2,7 @@ import React, { useState, createRef, useEffect } from "react";
 import { SliderData } from "./SliderData";
 import "./Slider.scss";
 
-function Slider() {
+const Slider=()=> {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalIndexs = SliderData.length;
 

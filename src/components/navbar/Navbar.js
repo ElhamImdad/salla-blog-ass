@@ -1,7 +1,7 @@
 import React from "react";
 import { FaMoon, FaSistrix } from "react-icons/fa";
 
-function Navbar() {
+const Navbar=()=> {
   return (
     <>
       <nav className="bg-black-light sticky top-0 z-10 w-fill w-window">

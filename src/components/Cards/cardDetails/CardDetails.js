@@ -1,7 +1,7 @@
 import React from "react";
 import "../Card.scss";
 
-function CardDetails({imgSrc, idx}) {
+const CardDetails=({imgSrc, idx})=> {
   return (
     <div className="rounded-md w-full h-52 md:h-64 my-2 md:mt-0 md-mb-2 lg:my-0 relative ">
       <img
