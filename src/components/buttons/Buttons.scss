@@ -1,0 +1,9 @@
+.rounded-icon {
+    @apply rounded-full p-1 md:p-2 border md:border-2
+}
+.contact-icon{
+    @apply self-center border-gray-100 bg-white-light;
+}
+.button-icon{
+    @apply rounded-full p-1 md:p-2 text-base sm:text-lg hover:text-white  focus:ring-1 focus:ring-offset-1 ring-white
+}

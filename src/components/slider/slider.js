@@ -1,5 +1,6 @@
 import React, { useState, createRef, useEffect } from "react";
 import { SliderData } from "./SliderData";
+import {FiChevronLeft, FiChevronRight} from "react-icons/fi";
 import "./Slider.scss";
 
 const Slider=()=> {
@@ -40,11 +41,11 @@ const Slider=()=> {
     <button
       type="button"
       onClick={isLeft ? previousIndex : nextIndex}
-      className={`arrow-style ${
+      className={`rounded-icon absolute text-white bg-black opacity-75 top-[40%] ${
         isLeft ? "md:left-24 left-10" : "md:right-24 right-10"
       }`}
     >
-      <span>{isLeft ? ">" : "<"}</span>
+      <span>{isLeft ? <FiChevronLeft/> : <FiChevronRight/>}</span>
     </button>
   );
 

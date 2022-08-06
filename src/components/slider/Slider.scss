@@ -2,7 +2,7 @@
     @apply inline-flex overflow-x-hidden snap-x snap-mandatory  overflow-hidden h-40 md:h-80 w-screen;
 }
 
-.arrow-style {
-    @apply absolute text-white text-2xl z-10 bg-black h-10 w-10 rounded-full opacity-75 flex  justify-center border-white border-2;
-    top: 40%;
-}
+// .arrow-style {
+//     @apply absolute text-white text-2xl bg-black h-10 w-10 opacity-75 flex  justify-center border-white rounded-full border-2;
+//     top: 40%;
+// }

@@ -40,20 +40,20 @@ const Navbar=()=> {
               </div>
             </div>
 
-            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden sm:block">
+            <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto hidden sm:block">
               <button
                 type="button"
-                className=" p-2 mx-1 rounded-full text-gray-300 hover:text-white  focus:ring-1 focus:ring-offset-1 focus:ring-offset-inherit  ring-white"
+                className="button-icon mx-1 text-gray-300"
               >
-                <span className="text-base sm:text-lg">
+                <span className="">
                   <FaSistrix />
                 </span>
               </button>
               <button
                 type="button"
-                className=" p-2 mx-1 rounded-full text-gray-300 hover:text-white  focus:ring-1 focus:ring-offset-1 focus:ring-offset-inherit ring-white"
+                className="button-icon text-gray-300"
               >
-                <span className="text-base font-bold sm:text-lg">
+                <span className="">
                   <FaMoon />
                 </span>
               </button>
