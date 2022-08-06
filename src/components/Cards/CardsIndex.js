@@ -77,13 +77,13 @@ const CardsIndex = () => {
         <div className="relative">
           <div className="flex flex-row ">
             <div className="overflow-hidden bg-white w-full rounded-md">
-              <button className="text-xs md:text-lg px-1.5 py-2 md:px-3.5 md:py-4 underline underline-offset-8 ">
+              <button className="text-xs md:text-lg px-1.5 md:px-2.5 py-1 md:py-1.5  underline underline-offset-8 ">
                 الاكثر قراءة
               </button>
-              <button className="text-xs md:text-lg px-1.5 py-2 md:px-3.5 md:py-4  text-gray-300">
+              <button className="text-xs md:text-lg px-1.5 md:px-2.5 py-1 md:py-1.5  text-gray-300">
                 الاكثر قراءة
               </button>
-              <button className="text-xs md:text-lg px-1.5 py-2 md:px-3.5 md:py-4  text-gray-300">
+              <button className="text-xs md:text-lg px-1.5 md:px-2.5 py-1 md:py-1.5 text-gray-300">
                 الاكثر قراءة
               </button>
             </div>

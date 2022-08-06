@@ -16,8 +16,8 @@ const CardWithFooter=({height1, height2})=> {
             أفكار البزنس
           </span>
         </div>
-        <p className={height2==='h-1/2'? 'text-xs md:text-sm' : 'text-lg md:text-1xl'}>ماهو مستقبل التجارة الالكترونية؟</p>
-        <p className="text-xs md:text-sm text-gray-neutrals">
+        <p className={'text-black-900' + (height2==='h-1/2'? 'text-xs md:text-sm' : 'text-lg md:text-1xl')}>ماهو مستقبل التجارة الالكترونية؟</p>
+        <p className="text-xs md:text-sm text-gray-600">
           من المتوقع أن تزيد المبيعات ..
         </p>
         <p className={"text-xs test-black-neutrals py-1 "+(height2==='h-1/2'? 'md:text-xs': "md:text-sm")}>

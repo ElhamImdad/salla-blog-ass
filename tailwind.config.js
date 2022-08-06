@@ -14,6 +14,7 @@ module.exports = {
       },
       'primary': {
         light: '#5DD5C4',
+        dark: '#06B6D4',
       },
       'orange': {
         light: '#FF9F4B',
@@ -23,11 +24,14 @@ module.exports = {
         light: '#222222',
         DEFAULT: '#000000',
         neutrals: '#404343',
+        900: '#202221',
       },
       'gray':{
+        50: '#F7F7F7',
         100: '#ECEEED',
         300: '#D1D5DB',
-        neutrals: '#808686',
+        400: '#B3B9B9',
+        600: '#808686',
       }
     },
     extend: {},
