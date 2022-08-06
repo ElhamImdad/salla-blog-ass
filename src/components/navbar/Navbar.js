@@ -4,7 +4,7 @@ import { FaMoon, FaSistrix } from "react-icons/fa";
 const Navbar=()=> {
   return (
     <>
-      <nav className="bg-black-light sticky top-0 z-10 w-fill w-window">
+      <nav className="bg-black-light top-0 z-10 w-window">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
 

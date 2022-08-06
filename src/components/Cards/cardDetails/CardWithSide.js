@@ -24,7 +24,6 @@ const CardWithSide=()=> {
           بواسطة عبدالله عاد
         </p>
       </div>
-      {/* <div>66</div> */}
     </div>
   );
 }

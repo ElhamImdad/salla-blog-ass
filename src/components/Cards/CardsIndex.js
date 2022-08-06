@@ -14,7 +14,7 @@ const CardsIndex = () => {
 
   return (
     <>
-      <div className="bg-white-light w-fill container mx-auto px-7 py-3 md:px-16 md:py-10 relative flex flex-col space-y-3 md:space-y-8">
+      <div className="bg-white-light w-fill container mx-auto px-7 md:px-16 py-3 md:py-10 relative flex flex-col space-y-3 md:space-y-8">
         <div className="">
           <div className="flex justify-between pb-1 md:pb-4">
             <div className="text-base md:text-2xl font-normal">

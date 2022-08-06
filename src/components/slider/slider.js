@@ -57,8 +57,7 @@ const Slider=()=> {
 
   return (
     <>
-      <div className="flex justify-center w-screen w-full">
-        <div className="relative w-full">
+      <div className="flex justify-center w-screen relative">
           <div className="slider">
             {sliderControl(true)}
             {SliderData.map(({ img }, i) => (
@@ -76,7 +75,6 @@ const Slider=()=> {
                 </h1> */}
             {sliderControl()}
           </div>
-        </div>
       </div>
     </>
   );
