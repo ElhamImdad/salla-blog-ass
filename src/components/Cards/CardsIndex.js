@@ -1,12 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import { AiOutlineLeft } from "react-icons/ai";
 import {FiChevronLeft, FiChevronRight} from "react-icons/fi";
 import CardDetails from "./cardDetails/CardDetails";
 import CardWithFooter from "./cardDetails/CardWithFooter";
 import CardWithSide from "./cardDetails/CardWithSide";
 import { SliderData as DataList } from "../slider/SliderData";
+import Modal from "../modal/Modal";
 
 const CardsIndex = () => {
+  const [showModal, setShowModal] = useState(false);
   const checkList = (img, i) => {
     if (i < 3) {
       <CardDetails imgSrc={img} />;
@@ -22,10 +24,14 @@ const CardsIndex = () => {
               الأكثر قراءة
             </div>
             <div className="flex flex-row items-center text-sm md:text-base font-normal">
-              <span className="pb-1">عرض المزيد</span>
+              <span className="pb-1" onClick={() => setShowModal(true)}>عرض المزيد</span>
               <i className="p-1 ">
                 <AiOutlineLeft />
               </i>
+              <Modal
+                show={showModal}
+                onHide={() => setShowModal(false)}
+              />
             </div>
           </div>
           <div className="lg:gap-4 lg:columns-3 sm:gap-6 md:gap-3 md:columns-2 sm:columns-1">
