@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineLeft } from "react-icons/ai";
+import {FiChevronLeft, FiChevronRight} from "react-icons/fi";
 import CardDetails from "./cardDetails/CardDetails";
 import CardWithFooter from "./cardDetails/CardWithFooter";
 import CardWithSide from "./cardDetails/CardWithSide";
@@ -75,7 +76,7 @@ const CardsIndex = () => {
         </div>
 
         <div className="relative">
-          <div className="flex flex-row ">
+          <div className="flex flex-row">
             <div className="overflow-hidden bg-white w-full rounded-md">
               <button className="text-xs md:text-lg px-1.5 md:px-2.5 py-1 md:py-1.5  underline underline-offset-8 ">
                 الاكثر قراءة
@@ -87,9 +88,10 @@ const CardsIndex = () => {
                 الاكثر قراءة
               </button>
             </div>
-            {/* <div>
-              <button className=""><AiOutlineRightCircle/></button>
-            </div> */}
+           
+              <button className="contact-icon rounded-icon mx-1 md:mx-3"><FiChevronLeft className="stroke-gray-600"/></button>
+              <button className="contact-icon rounded-icon"><FiChevronRight className="stroke-gray-600"/></button>
+       
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3  my-3">
             {DataList.map(({ img }, i) => (
